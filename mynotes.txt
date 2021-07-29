@@ -1,0 +1,101 @@
+- learn the shortcuts, they will quickly help you learn code.
+
+generate content first
+modify layout 2nd
+
+elements will take up the entire width of the page by default
+
+flexbox helps make it so the element will move to the side rather than the automatically underneath
+
+add this to the main tag:
+element.style {
+display: flex;
+}
+
+utility class:
+.d-flex {
+    display: flex;
+}
+then go into the <main> tag and add the class <main class"d-flex">
+
+
+can do this:
+div {
+    display: flex;
+}
+
+wouldn't be so good though becuase you wouldn't want that on all the divs
+
+to swap the 2 sides is a little more complicated, but possible:
+
+.d-flex {
+    display: flex;
+    flex-flow: row-reverse;
+
+BOX MODEL
+margin: outside the element (colorless, takes the color from the page)(pushes things away)
+border: outside the element (has its own color)
+padding: inbetween the border and the padding (shrinks content inside)
+padding: inside the element 
+Content: inside the element (actual physical text)
+
+1 attribut
+element.style {
+    margin: 50 px    --does 50 px all the way around
+    50px 30px       --does 50 px on top and bottom and 30 px on left and right
+    50px 30px 10px 5px -- does 50 px top, right 30 px, 10 px bottom, 5 px right
+
+if you don't want to affect the width of the element, use padding
+
+vw is view width
+element.style {
+    padding: 2vw;
+}
+
+vh is view height
+rem is root text type of page 2rem
+em is relative tesxt type of the element 2em
+height: 50%
+
+
+horizontal allingment. and add space between them
+element.style {
+ justify-content: space-between;
+ display: flex;
+}
+
+flex box is used within the element unless you use align-item: self
+
+to bring things in on the left and right 
+main {
+ padding: 3em 1em
+}
+adide {
+ padding-right .5em;
+}
+section {
+ padding: 0px 3em;
+
+ctrl d : finds matches of the same kind
+
+line separaters
+
+text-align: center;  centers the text
+
+border-right: 1px solid grey; 	adds a border to the right
+border-left: 1px dashed grey;   adds a dashed grey border
+
+outlines all the elements on the page
+* {
+ outline: 1px solid red;
+}
+
+img and then tab
+src="//placehold.it/200x350"
+just takes up the space
+
+src="http://placekitten.com/300/300"
+
+
+
+
